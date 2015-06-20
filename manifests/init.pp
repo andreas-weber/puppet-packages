@@ -26,7 +26,9 @@ class aw_packages()
       'htop',
       'curl',
       'ant',
-      'git'
+      'git',
+      'apt-transport-https',
+      'ca-certificates'
     ]:
       ensure => 'latest'
   }
