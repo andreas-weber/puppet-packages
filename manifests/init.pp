@@ -28,8 +28,7 @@ class aw_packages()
       'ant',
       'git',
       'apt-transport-https',
-      'ca-certificates',
-      'sudo'
+      'ca-certificates'
     ]:
       ensure => 'latest'
   }
