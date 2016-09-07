@@ -31,10 +31,4 @@ class aw_packages()
     ]:
       ensure => 'latest'
   }
-  
-  if ! defined(Package['apt-transport-https']) {
-    package { 'apt-transport-https':
-        ensure => latest,
-    }
-  }
 }
