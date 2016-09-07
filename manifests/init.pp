@@ -27,9 +27,14 @@ class aw_packages()
       'curl',
       'ant',
       'git',
-      'apt-transport-https',
       'ca-certificates'
     ]:
       ensure => 'latest'
+  }
+  
+  if ! defined(Package[''apt-transport-https'']) {
+    package { ''apt-transport-https'':
+        ensure => latest,
+    }
   }
 }
